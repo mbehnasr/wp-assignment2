@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2</title>
+
+    <link rel="stylesheet" href="signup.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="login-wrap">
+      <div class="login-html">
+        <input
+          id="tab-1"
+          type="radio"
+          name="tab"
+          class="sign-in"
+          checked
+        /><label style="width: 40%; text-align: center" for="tab-1" class="tab"
+          >ورود</label
+        >
+        <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+          style="width: 40%; text-align: center"
+          for="tab-2"
+          class="tab"
+          >ثبت نام</label
+        >
+        <div class="login-form">
+          <div class="sign-in-htm">
+            <div class="group">
+              <input id="user" type="email" class="input" placeholder="ایمیل" />
+            </div>
+            <div class="group">
+              <input
+                id="pass"
+                type="password"
+                class="input"
+                data-type="password"
+                placeholder="رمز عبور"
+              />
+            </div>
+
+            <div class="group">
+              <input type="submit" class="button" value="ورود" />
+            </div>
+            <div class="hr"></div>
+          </div>
+          <div class="sign-up-htm">
+            <div class="group">
+              <input id="user" type="email" class="input" placeholder="ایمیل" />
+            </div>
+            <div class="group">
+              <input
+                id="pass"
+                type="password"
+                class="input"
+                data-type="password"
+                placeholder="رمز عبور"
+              />
+            </div>
+            <div class="group">
+              <input
+                id="pass"
+                type="password"
+                class="input"
+                data-type="password"
+                placeholder="تکرار رمز عبور"
+              />
+            </div>
+            <div class="group">
+              <input id="check" type="checkbox" class="check" />
+              <label for="check"
+                ><span class="icon"></span> قوانین و شرایط را می‌پذیرم</label
+              >
+            </div>
+            <div class="group">
+              <input type="submit" class="button" value="ثبت نام" />
+            </div>
+            <div class="hr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
