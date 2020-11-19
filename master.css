@@ -1,5 +1,6 @@
 body {
   padding-top: 100px;
+  padding-right: 300px;
 }
 
 .logo {
@@ -17,6 +18,7 @@ body {
 .mynav {
   background-color: greenyellow;
   text-align: center;
+  box-shadow: 0 5px 5px gray;
 }
 
 .active-bc {
@@ -39,4 +41,27 @@ body {
 
 tr:nth-child(even) {
   background-color: lightblue;
+}
+
+.menu {
+  background-color: lightgreen;
+  position: fixed;
+  float: right;
+  width: 300px;
+  margin: 0;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.prev-btn {
+  float: right;
+}
+
+.next-btn {
+  float: left;
 }
