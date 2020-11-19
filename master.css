@@ -2,29 +2,24 @@ body {
   padding-top: 100px;
   padding-right: 300px;
 }
-
 .logo {
   padding: 0;
   margin: 0;
   height: 50px;
 }
-
 .mynav-right {
   padding: 0;
   margin: 0;
   float: right;
 }
-
 .mynav {
   background-color: greenyellow;
   text-align: center;
   box-shadow: 0 5px 5px gray;
 }
-
 .active-bc {
   background-color: lightseagreen;
 }
-
 .my-btn {
   width: 160px;
   margin-left: 20px;
@@ -33,16 +28,13 @@ body {
 .mytable {
   text-align: center;
 }
-
 .t-header {
   text-align: center;
   background-color: seagreen;
 }
-
 tr:nth-child(even) {
   background-color: lightblue;
 }
-
 .menu {
   background-color: lightgreen;
   position: fixed;
@@ -56,12 +48,44 @@ tr:nth-child(even) {
   overflow-x: hidden;
   padding-top: 50px;
   text-align: center;
+  z-index: 15;
 }
-
 .prev-btn {
   float: right;
 }
-
 .next-btn {
   float: left;
+}
+.out-menu {
+  margin-right: 300px;
+  text-align: center;
+}
+.parent {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  background-color: lightblue;
+  text-align: center;
+  font-size: 5em;
+  flex: 1 0 21%;
+  margin: 2%;
+  width: 100px;
+  height: 240px;
+  box-shadow: 0;
+  transition: box-shadow 1s;
+  position: relative;
+  z-index: 10;
+}
+.child:hover {
+  box-shadow: 0 0 0.5em black;
+}
+@media (max-width: 1000px) {
+  .parent {
+    width: 680px;
+  }
+  .child {
+    flex: 1 0 25%;
+  }
 }
