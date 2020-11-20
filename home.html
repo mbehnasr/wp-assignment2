@@ -31,22 +31,43 @@
             class="logo"
           />
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right top-nav-item">
           <li>
-            <a style="color: black" href="#">داده‌ها</a>
+            <a style="color: black" href="./data.html">داده‌ها</a>
           </li>
           <li class="active-bc"><a style="color: black" href="#">خانه</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-form">
+        <ul class="nav navbar-nav navbar-left top-nav-item">
           <li>
-            <button class="btn btn-primary my-btn" href="#">
+            <a
+              style="color: white; height: 40px; padding: 3%; margin-top: 5px"
+              class="btn btn-primary my-btn"
+              href="./signup.html"
+            >
               <span class="glyphicon glyphicon-user"></span> ثبت نام
-            </button>
+            </a>
           </li>
           <li>
-            <button class="btn btn-info my-btn" href="#">
+            <a
+              style="color: white; height: 40px; padding: 3%; margin-top: 5px"
+              class="btn btn-info my-btn"
+              href="./signup.html"
+            >
               <span class="glyphicon glyphicon-log-in"></span> ورود
-            </button>
+            </a>
+          </li>
+        </ul>
+        <ul
+          style="margin-left: 5px"
+          class="nav navbar-nav navbar-form responsive-menu"
+        >
+          <li style="height: 30px; margin: 0; padding-left: 10px">
+            <a
+              style="color: black; padding: 4px"
+              href="javascript:void(0);"
+              onclick="res_menu()"
+              >منو</a
+            >
           </li>
         </ul>
       </div>
@@ -92,4 +113,11 @@
       </div>
     </div>
   </body>
+  <script>
+    function res_menu() {
+      const menu = document.getElementsByClassName("menu")[0];
+      if (menu.style.display === "none") menu.style.display = "block";
+      else menu.style.display = "none";
+    }
+  </script>
 </html>

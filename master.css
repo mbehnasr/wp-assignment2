@@ -1,4 +1,7 @@
-
+body {
+  padding-top: 50px;
+  padding-right: 300px;
+}
 .logo {
   padding: 0;
   margin: 0;
@@ -11,9 +14,10 @@
 }
 .mynav {
   text-align: center;
+  background-color: greenyellow;
 }
 .active-bc {
-  /*background-color: lightseagreen;*/
+  background-color: lightseagreen;
 }
 .my-btn {
   width: 160px;
@@ -37,7 +41,6 @@ tr:nth-child(even) {
   width: 300px;
   margin: 0;
   height: 100%;
-  z-index: 1;
   top: 0;
   right: 0;
   overflow-x: hidden;
@@ -54,6 +57,9 @@ tr:nth-child(even) {
 .out-menu {
   text-align: center;
 }
+.parent-wrapper {
+  text-align: center;
+}
 .parent {
   margin: auto;
   display: flex;
@@ -66,7 +72,7 @@ tr:nth-child(even) {
   flex: 1 0 21%;
   margin: 2%;
   width: 100px;
-  height: 240px;
+  height: 200px;
   box-shadow: 0;
   transition: box-shadow 1s;
   position: relative;
@@ -75,8 +81,33 @@ tr:nth-child(even) {
 .child:hover {
   box-shadow: 0 0 0.5em black;
 }
+.responsive-menu {
+  margin-left: 0;
+  padding: 0;
+  display: none;
+  width: 5%;
+  float: left;
+}
 @media (max-width: 1000px) {
   .child {
     flex: 1 0 25%;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+    background-color: lightgreen;
+    position: none;
+    float: left;
+    left: 0;
+  }
+  body {
+    padding-right: 0;
+  }
+  .top-nav-item {
+    display: none;
+  }
+  .responsive-menu {
+    display: block;
   }
 }
