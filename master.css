@@ -82,9 +82,6 @@ tr:nth-child(even) {
   box-shadow: 0 0 0.5em black;
 }
 @media (max-width: 1000px) {
-  .parent {
-    width: 680px;
-  }
   .child {
     flex: 1 0 25%;
   }
