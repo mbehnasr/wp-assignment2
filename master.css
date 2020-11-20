@@ -1,7 +1,4 @@
-body {
-  padding-top: 100px;
-  padding-right: 300px;
-}
+
 .logo {
   padding: 0;
   margin: 0;
@@ -13,12 +10,10 @@ body {
   float: right;
 }
 .mynav {
-  background-color: greenyellow;
   text-align: center;
-  box-shadow: 0 5px 5px gray;
 }
 .active-bc {
-  background-color: lightseagreen;
+  /*background-color: lightseagreen;*/
 }
 .my-btn {
   width: 160px;
@@ -57,7 +52,6 @@ tr:nth-child(even) {
   float: left;
 }
 .out-menu {
-  margin-right: 300px;
   text-align: center;
 }
 .parent {
